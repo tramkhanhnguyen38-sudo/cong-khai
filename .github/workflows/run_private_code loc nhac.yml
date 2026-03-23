@@ -165,7 +165,7 @@ jobs:
           # Torch CPU + Torchaudio (đúng index CPU)
           python -m pip install "torch==2.3.1" "torchaudio==2.3.1" --index-url https://download.pytorch.org/whl/cpu
           # Whisper (gói đúng tên: openai-whisper)
-          python -m pip install "openai-whisper==20231117"
+          python -m pip install --no-build-isolation "openai-whisper==20231117"
 
           # YAMNet (TensorFlow) để lọc nhạc
           python -m pip install tensorflow-cpu tensorflow-hub
